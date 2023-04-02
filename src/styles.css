@@ -1,0 +1,255 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 4 version
+*/
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.text {
+    font-family: 'Bangers', Helvetica, sans-serif; 
+    color: hsl(13, 74%, 42%);
+    -webkit-user-select: none;
+       -moz-user-select: none;
+        -ms-user-select: none;
+            user-select: none;
+    text-shadow: -1px 1px 0 #000,
+                3px 3px 0 #000,
+                1px -1px 0 #000,
+                -1px -1px 0 #000;
+}
+
+h1 {
+    font-size: 11vh;
+}
+
+h2 {
+    font-size: 7vh;
+}
+
+.button {
+    background-color: #f7a499;
+    border-style: solid;
+    border-width: 1px;
+    border-color: #2e1f1d;
+    border-radius: 40px;
+    -webkit-box-shadow: -1px 1px 0 #000,
+                3px 3px 0 #000,
+                1px -1px 0 #000,
+                -1px -1px 0 #000;
+            box-shadow: -1px 1px 0 #000,
+                3px 3px 0 #000,
+                1px -1px 0 #000,
+                -1px -1px 0 #000;
+    width: 200px;
+    height: 80px;
+    font-size: 5vh;
+    font-weight: bold;
+    cursor: pointer;
+    margin-bottom: 40px;
+}
+
+.button:focus {
+    outline: none;
+    color: #f7a499;
+    background-color: hsl(13, 74%, 42%);
+}
+
+.button:hover {
+    color: #f7a499;
+    background-color: hsl(13, 74%, 42%);
+}
+
+.body {
+    background-color: #2e1f1d;
+    overflow: hidden;
+}
+
+@media screen and (max-width: 1024px) {
+    .body {
+        background-color: #1c111c;
+        overflow:initial;
+    }
+}
+
+.window-regular {
+    background-color: transparent;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    position: absolute;
+    z-index: 10;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    top: 50%;
+    left: 50%;
+    width: 90vh;
+    height: 90vh;
+    margin-left: -45vh;
+    margin-top: -45vh;
+}
+
+@media screen and (max-width: 1024px) {
+    .window-regular {
+        width: 100vw;
+        height: 50vw;
+        margin-left: 0px;
+        margin-top: 0px;
+        left: 0%;
+        top: 0%;
+
+        top: 50%;
+        left: 50%;
+        width: 70vw;
+        height: 46vw;
+        margin-left: -35vw;
+        margin-top: -23vw;
+    }
+}
+
+.div_start-window {
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+}
+
+.div_start-menu {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    gap: 1vh;
+}
+
+.div_game {
+    background-color: transparent;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    width: 700px;
+    height: 700px;
+    margin-left: -350px;
+    margin-top: -350px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    border-style: solid;
+    border-width: 5px;
+    border-color: #0d1521;
+}
+
+@media screen and (max-width: 1024px) {
+    .div_game {
+        width: 100vw;
+        height: 50vw;
+        margin-left: 0px;
+        margin-top: 0px;
+        left: 0%;
+        top: 0%;
+    }
+}
+
+#canvas {
+    display: block;
+}
+
+#canvasSmallScreen {
+    display: none;
+}
+
+@media screen and (max-width: 1024px) {
+    #canvas {
+        display: none;
+    }
+
+    #canvasSmallScreen {
+        display: block;
+    }
+}
+
+.game-over {
+    display: none;
+}
+
+.text-tip {
+    display: none;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    width: 100%;
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
+    -webkit-animation: scaling-transform .5s ease-in-out alternate .5s infinite;
+            animation: scaling-transform .5s ease-in-out alternate .5s infinite;
+}
+
+@-webkit-keyframes scaling-transform {
+    100% {-webkit-transform: scale(1.2);transform: scale(1.2);}
+}
+
+@keyframes scaling-transform {
+    100% {-webkit-transform: scale(1.2);transform: scale(1.2);}
+}
+
+.in-game-header {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    width: 70%;
+}
+
+.record-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    gap: 20px;
+}
+
+.blink {
+    -webkit-animation: blinker 1s step-start infinite;
+            animation: blinker 1s step-start infinite;
+}
+  
+@-webkit-keyframes blinker {
+    50% {
+        opacity: 0;
+    }
+}
+  
+@keyframes blinker {
+    50% {
+        opacity: 0;
+    }
+}

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script src="./src/js/config.js"></script>
+        <script src="./src/js/audioController.js"></script>
+        <script src="./src/js/rect.js"></script>
+        <script src="./src/js/canvasPainter.js"></script>
+        <script src="./src/js/animatedGameObject.js"></script>
+        <script src="./src/js/collidableGameObject.js"></script>
+        <script src="./src/js/gravityControllerForObject.js"></script>
+        <script src="./src/js/gameObjectWithGravity.js"></script>
+        <script src="./src/js/pipe.js"></script>
+        <script src="./src/js/pipePair.js"></script>
+        <script src="./src/js/pipeController.js"></script>
+        <script src="./src/js/backgroundController.js"></script>
+        <script src="./src/js/floor.js"></script>
+        <script src="./src/js/bird.js"></script>   
+        <script src="./src/js/gameCore.js"></script>   
+        
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Bangers&display=swap" rel="stylesheet">
+        <link rel="stylesheet" type="text/css" href="src/styles.css" />
+    </head>
+    <body class="body">
+        <div class="div_game">
+            <canvas id="canvas" width="1400" height="1400"></canvas>
+            <canvas id="canvasSmallScreen" width="1400" height="700"></canvas>
+            <div class="window-regular div_start-window">
+                <div class="div_start-menu">
+                <h1 class="text">A BIRD</h1>
+                <h1 class="text">THAT FLAPS</h1>
+                </div>
+                <div class="div_start-menu">
+                    <div class="record-container">
+                        <h2 class="text">Record: </h2>
+                        <h2 class="text record"></h2>
+                    </div>
+                    <button class="button text button_start">Start</button>
+                </div>
+            </div>
+            <div class="window-regular div_in-game">
+                <div class="in-game-header">
+                    <h2 class="text">Score: </h2>
+                    <h2 class="text score"></h2>
+                    <h2 class="text">Record: </h2>
+                    <h2 class="text record"></h2>
+                </div>
+                <div class="text-tip">
+                    <h2 class="text">Click/Space to start!</h2>
+                </div>
+            </div>
+            <div class="window-regular game-over">
+                <h1 class="text">GAME OVER</h1>
+                <h2 class="text">Your score</h2>
+                <h2 class="text game-over__score"></h2>
+                <button class="button text game-over__restart">Restart</button>
+            </div>
+        </div>
+        <script src="src/js/script.js"></script>
+    </body>
+</html>
